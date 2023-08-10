@@ -1,21 +1,23 @@
 import React from "react";
 import Navbar from "./Navbar";
-import SearchBySort from "./SearchBySort";
-import AllMembers from "./AllMembers";
+import Files from "./Files";
+import DriveSort from "./DriveSort";
+import Drivepics from "./Drivepics";
 
-const Members = () => {
+const DriveCo = () => {
   return (
     <div
       className="members-container"
       style={{ borderRadius: "30px", overflow: "hidden" }}
     >
       <div className="members">
-        <Navbar title="People" />
-        <SearchBySort />
-        <AllMembers />
+        <Navbar title="Drive" />
       </div>
+      <Files />
+      <DriveSort/>
+      <Drivepics/>
     </div>
   );
 };
 
-export default Members;
+export default DriveCo;
