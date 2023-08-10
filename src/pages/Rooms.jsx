@@ -1,8 +1,8 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
-import Members from '../components/Members';
 
-const Home = () => {
+
+const Rooms = () => {
   return (
     <div className='myapp'>
       <div className="container-fluid">
@@ -13,7 +13,7 @@ const Home = () => {
           <div style={{backgroundColor:"white",borderTopLeftRadius:50,borderBottomLeftRadius:50,paddingLeft:60}} className="col-lg-9 col-md-8 col-sm-12 ">
            
             
-              <Members />
+        
             
           </div>
         </div>
@@ -22,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Rooms;

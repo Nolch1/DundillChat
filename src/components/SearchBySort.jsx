@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const SearchBySort = () => {
   const [isMembersDropdownOpen, setMembersDropdownOpen] = useState(false);
@@ -28,17 +28,19 @@ const SearchBySort = () => {
               id="membersDropdown"
               onClick={toggleMembersDropdown}
               aria-expanded={isMembersDropdownOpen}
-              style={{ background: '#F7034933', color: '#000000' }}
+              style={{ background: "#F7034933", color: "#000000" }}
             >
               All Members
             </button>
-            <ul className={`dropdown-menu ${isMembersDropdownOpen ? 'show' : ''}`} aria-labelledby="membersDropdown">
+            <ul
+              className={`dropdown-menu ${isMembersDropdownOpen ? "show" : ""}`}
+              aria-labelledby="membersDropdown"
+            >
               <li>
                 <a className="dropdown-item" href="#!">
                   All Members
                 </a>
               </li>
-             
             </ul>
           </div>
         </div>
@@ -50,11 +52,16 @@ const SearchBySort = () => {
               id="departmentDropdown"
               onClick={toggleDepartmentDropdown}
               aria-expanded={isDepartmentDropdownOpen}
-              style={{ background: '#FFFFFF', color: '#000000' }}
+              style={{ background: "#FFFFFF", color: "#000000" }}
             >
               Departement
             </button>
-            <ul className={`dropdown-menu ${isDepartmentDropdownOpen ? 'show' : ''}`} aria-labelledby="departmentDropdown">
+            <ul
+              className={`dropdown-menu ${
+                isDepartmentDropdownOpen ? "show" : ""
+              }`}
+              aria-labelledby="departmentDropdown"
+            >
               <li>
                 <a className="dropdown-item" href="#!">
                   Departement
@@ -69,7 +76,10 @@ const SearchBySort = () => {
           </div>
         </div>
       </div>
-      <div className="d-flex align-items-center">
+      <div
+        style={{ paddingRight: "80px" }}
+        className="d-flex align-items-center"
+      >
         <span className="sort-by-text me-2">Sort By</span>
         <div className="dropdown">
           <button
@@ -78,11 +88,14 @@ const SearchBySort = () => {
             id="sortByDropdown"
             onClick={toggleSortByDropdown}
             aria-expanded={isSortByDropdownOpen}
-            style={{ width:'50px', background: '#FFFFFF', color: '#000000' }}
+            style={{ width: "50px", background: "#FFFFFF", color: "#000000" }}
           >
             All
           </button>
-          <ul className={`dropdown-menu ${isSortByDropdownOpen ? 'show' : ''}`} aria-labelledby="sortByDropdown">
+          <ul
+            className={`dropdown-menu ${isSortByDropdownOpen ? "show" : ""}`}
+            aria-labelledby="sortByDropdown"
+          >
             <li>
               <a className="dropdown-item" href="#!">
                 All
@@ -94,6 +107,5 @@ const SearchBySort = () => {
     </div>
   );
 };
-
 
 export default SearchBySort;

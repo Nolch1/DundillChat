@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({title}) => {
   return (
     <div className="navbar-container d-flex align-items-center justify-content-between my-0">
-      <div className="navbar-item people-text">People</div>
+      <div className="navbar-item people-text">{title}</div>
       <div className="main">
         <div className="form-group has-search">
           <span className="fa fa-search form-control-feedback"></span>
@@ -14,7 +14,7 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <div className="d-flex align-items-center">
+      <div style={{ paddingRight: "70px" }} className="d-flex align-items-center">
         <div className="cadre-container d-flex">
           <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>
             <i className="fa-regular fa-bell"></i>
