@@ -6,6 +6,12 @@ import DrivePhotos from "./DrivePhotos.json";
 const Drivepics = () => {
   const pictures = DrivePhotos;
 
+  const handleImageClick = (index) => {
+    // Perform the action you want when an image is clicked, e.g., navigating to a specific page
+    // You can use the history object or any navigation mechanism you have in your app
+    console.log(`Image ${index} clicked`);
+  };
+
   return (
     <div>
       <div>
@@ -27,6 +33,8 @@ const Drivepics = () => {
                     src={pan}
                     className="centeredimage"
                     alt="Profile Picture"
+                    onClick={() => handleImageClick(index)}
+                    style={{ cursor: "pointer" }}
                   />
                 </div>
                 <div style={{ float: "right" }}>
@@ -34,6 +42,8 @@ const Drivepics = () => {
                     src={up}
                     className="centeredimage"
                     alt="Profile Picture"
+                    onClick={() => handleImageClick(index)}
+                    style={{ cursor: "pointer" }}
                   />
                 </div>
               </div>

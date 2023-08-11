@@ -10,7 +10,6 @@ const Forms = () => {
   const [activeButton, setActiveButton] = useState(null);
 
   const location = useLocation();
-  console.log(location.pathname);
   return (
     <div className="d-flex justify-content-center flex-wrap">
       <ul className="nav nav-pills flex-column">
