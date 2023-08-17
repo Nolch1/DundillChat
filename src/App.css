@@ -295,10 +295,7 @@ p {
   height: 40px;
   justify-content: center;
 }
-.members-container {
-  border-radius: 30px;
-  overflow: hidden;
-}
+
 .bo {
   border-radius: 20px;
   padding: 10px;
@@ -419,7 +416,6 @@ p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
- 
 }
 .btn.blackbtn {
   border: none;
@@ -445,8 +441,81 @@ p {
   .centeredimage {
     margin-top: 10px;
   }
-  
 }
-
-
-
+.conv1 {
+  color: #f70349;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 10px;
+}
+.conversation {
+  display: flex;
+  flex-direction: column;
+}
+.userChat {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+.main1 {
+  width: 50%;
+}
+.main12 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.messagest {
+  color: #9a9a9a;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.namest {
+  color: #1e1e1e;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.user1 {
+  align-items: center;
+  background-color: pink;
+  gap: 10px;
+  display: flex;
+}
+.user2 {
+  display: flex;
+  gap: 20px;
+}
+.userimg {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  gap: 10px;
+  object-fit: cover;
+}
+.username {
+  color: #1e1e1e;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+.call {
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+}

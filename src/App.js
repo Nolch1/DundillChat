@@ -8,6 +8,8 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import Drive from "./pages/Drive";
 import Inbox from "./pages/Inbox";
 import Rooms from "./pages/Rooms";
+import BigProfile from "./pages/BigProfile";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/Drive" element={<Drive />} />
         <Route path="/Inbox" element={<Inbox />} />
         <Route path="/Rooms" element={<Rooms />} />
+        <Route path="/BigProfile" element ={<BigProfile/>}/>
       </Routes>
     </Router>
   );
