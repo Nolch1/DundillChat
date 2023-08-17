@@ -1,8 +1,8 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
-import InboxCo from "../components/InboxCo";
+import ProfileCo from "../components/ProfileCo";
 
-const Inbox = () => {
+const BigProfile = () => {
   return (
     <div className="myapp">
       <div className="container-fluid">
@@ -19,7 +19,7 @@ const Inbox = () => {
             }}
             className="col-lg-9 col-md-8 col-sm-12 "
           >
-            <InboxCo />
+            <ProfileCo />
           </div>
         </div>
       </div>
@@ -27,4 +27,4 @@ const Inbox = () => {
   );
 };
 
-export default Inbox;
+export default BigProfile;
