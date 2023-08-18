@@ -7,8 +7,15 @@ const InboxMsg = () => {
   return (
     <div>
       <UserLogo />
-      <UserMsg />
-      <UserInput />
+      <div style={{ maxHeight: "480px", overflowY: "scroll", padding: 10 }}>
+        <UserMsg />
+        <UserMsg />
+        <UserMsg />
+        <UserMsg />
+      </div>
+      <div style={{ paddingBottom: 20 }}>
+        <UserInput />
+      </div>
     </div>
   );
 };

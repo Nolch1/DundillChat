@@ -16,11 +16,18 @@ const UserLogo = () => {
     <div className="user1">
       <div
         className="user2"
-        style={{ display: "flex", justifyContent: "space-between" }}
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginLeft: "10px",
+        }}
       >
         <img className="userimg" src={firas} alt="" />
         <span className="username">Firas Kacem</span>
-        <div className="call" style={{ alignItems: "center" }}>
+        <div
+          className="call"
+          style={{ alignItems: "center", marginLeft: "350px" }}
+        >
           <a href="#" onClick={handleAppelVideoClick}>
             <img className="appelvideo" src={appelvideo} alt="Appel Video" />
           </a>

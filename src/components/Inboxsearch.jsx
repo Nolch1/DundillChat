@@ -3,7 +3,7 @@ import oussema from "../img/oussema.png";
 
 const Inboxsearch = () => {
   return (
-    <div className="conversation" style={{ backgroundColor: "red" }}>
+    <div className="conversation">
       <span className="conv1">All Conversation</span>
 
       <div className="main12">
