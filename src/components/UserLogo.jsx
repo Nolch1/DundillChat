@@ -26,7 +26,7 @@ const UserLogo = () => {
         <span className="username">Firas Kacem</span>
         <div
           className="call"
-          style={{ alignItems: "center", marginLeft: "350px" }}
+          style={{ alignItems: "center", marginLeft: "auto" }}
         >
           <a href="#" onClick={handleAppelVideoClick}>
             <img className="appelvideo" src={appelvideo} alt="Appel Video" />

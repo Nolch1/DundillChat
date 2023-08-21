@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-import RoomsSort from "./RoomsSort";
+
 import AllRooms from "./AllRooms";
 
 const RoomsCo = () => {
@@ -11,8 +11,7 @@ const RoomsCo = () => {
     >
       <div className="members">
         <Navbar title="Rooms" />
-        <RoomsSort/>
-        <AllRooms/>
+        <AllRooms />
       </div>
     </div>
   );

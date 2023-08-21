@@ -7,7 +7,7 @@ const InboxMsg = () => {
   return (
     <div>
       <UserLogo />
-      <div style={{ maxHeight: "500px", overflowY: "scroll", padding: 10 }}>
+      <div style={{ maxHeight: "453px", overflowY: "scroll", padding: 10 }}>
         <UserMsg />
         <UserMsg />
         <UserMsg />
