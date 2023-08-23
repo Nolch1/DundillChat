@@ -31,7 +31,7 @@ const Inboxchat = () => {
       <div style={flexOneStyle}>
         <InboxSide />
       </div>
-      <div style={dividerStyle}></div> {/* Divider line */}
+
       <div style={flexTwoStyle}>
         <InboxMsg />
       </div>

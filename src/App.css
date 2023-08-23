@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .formContainer {
   height: 100vh;
   display: flex;
@@ -561,7 +565,7 @@ p {
 }
 .allinput {
   height: 50px;
-
+ gap: 20px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -593,4 +597,124 @@ input {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+/* InboxMsg.css */
+.scroll-container {
+  max-height: 480px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.scroll-content {
+  max-height: 450px;
+  overflow-y: scroll;
+  scrollbar-width: thin; /* For WebKit browsers */
+  scrollbar-color: #9a9a9a #ededed; /* For WebKit browsers */
+}
+
+/* For Firefox */
+.scroll-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+  background-color: #9a9a9a;
+  border-radius: 3px;
+}
+
+.scroll-content::-webkit-scrollbar-track {
+  background-color: #ededed;
+}
+/* Sidebar.css */
+.sidebar1 {
+  background-color: #1e1e1e;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+
+.profileEdit{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.Container{
+  display: flex;
+  width: 100%;
+
+}
+main{
+  width: 100%;
+  height: 100vh;
+}
+.sidebar{
+  background: #1e1e1e;
+  color: #fff;
+  height: 100vh;
+  width: 300px;
+}
+.top_section{
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.bars{
+  margin-left: 20px;
+  display: flex;
+  font-size: 30px;
+}
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #fff;
+  padding: 10px 70px;
+  gap : 40px;
+  transition: all 0.5s;
+  border-left: 4px solid transparent;
+  text-decoration: none;
+}
+.link:hover{
+  background: lightskyblue;
+  color: #000;
+  transition: all 0.5s;
+
+}
+.active{
+  color: #f70349; 
+  border-left-color: #f70349;  
+  text-decoration: none;
+}
+.fixed-image {
+  width: 25px; 
+  height: 25px; 
+}
+.link_text{
+}
+.active .fixed-image {
+  
+}
+.userProf{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.top_section img{
+  width: 220px;
+}
+.row{
+  margin: 0px;
+  padding: 0px;
+}
+.bigcontainer{
+  height: 100vh;
+
 }

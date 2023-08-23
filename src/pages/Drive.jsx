@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
+
 import DriveCo from "../components/DriveCo";
 
 const Drive = () => {
@@ -7,10 +7,6 @@ const Drive = () => {
     <div className="myapp">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-lg-3 col-md-4 col-sm-12 p-0 ">
-            <Sidebar />
-          </div>
-
           <div
             style={{
               backgroundColor: "white",
@@ -18,7 +14,7 @@ const Drive = () => {
               borderBottomLeftRadius: 50,
               paddingLeft: 60,
             }}
-            className="col-lg-9 col-md-8 col-sm-12 "
+            className="bigcontainer "
           >
             <DriveCo />
           </div>
