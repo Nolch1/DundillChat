@@ -11,7 +11,6 @@ import Rooms from "./pages/Rooms";
 import BigProfile from "./pages/BigProfile";
 import NewSideBar from "./components/NewSideBar";
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -26,7 +25,7 @@ function App() {
         <Route path="/Drive" element={<Drive />} />
         <Route path="/Inbox" element={<Inbox />} />
         <Route path="/Rooms" element={<Rooms />} />
-        <Route path="/BigProfile" element ={<BigProfile/>}/>
+        <Route path="/BigProfile" element={<BigProfile />} />
       </Routes>
       </NewSideBar>
     </BrowserRouter>

@@ -17,6 +17,7 @@ const InboxMsg = () => {
   return (
     <div>
       <UserLogo />
+
       <div className="scroll-container">
         <div className="scroll-content" ref={scrollContainerRef}>
           <UserMsg />
@@ -24,6 +25,7 @@ const InboxMsg = () => {
           <UserMsg />
           <UserMsg />
         </div>
+
       </div>
 
       <UserInput />
