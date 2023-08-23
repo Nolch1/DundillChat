@@ -19,7 +19,7 @@ const Inboxsearch = () => {
           </div>
         </div>
       </div>
-      <div className="userChat">
+      <div style={{}} className="userChat">
         <img src={oussema} alt="Oussema Amar" />
         <div className="userChatInfo">
           <span className="namest">Oussema Amar</span>

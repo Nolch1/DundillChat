@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
 import Login from "./pages/Login";
 import "./App.css";
 import Home from "./pages/Home";
@@ -9,14 +9,23 @@ import Drive from "./pages/Drive";
 import Inbox from "./pages/Inbox";
 import Rooms from "./pages/Rooms";
 import BigProfile from "./pages/BigProfile";
+
 import CreateRoom from "./pages/CreateRoom";
 import CreateMember from "./pages/CreateMember";
 
+import NewSideBar from "./components/NewSideBar";
+
+
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/Login" element={<Login />} />
+      </Routes>
+    <NewSideBar>
       <Routes>
-        <Route path="/" element={<Login />} />
+        
         <Route path="/Home" element={<Home />} />
         <Route path="/Drive" element={<Drive />} />
         <Route path="/Inbox" element={<Inbox />} />
@@ -25,7 +34,8 @@ function App() {
         <Route path="/addroom" element={<CreateRoom />} />
         <Route path="/addmember" element={<CreateMember />} />
       </Routes>
-    </Router>
+      </NewSideBar>
+    </BrowserRouter>
   );
 }
 
