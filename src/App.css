@@ -383,8 +383,8 @@ p {
 }
 .fixed-pagination {
   position: fixed;
-  bottom: 0px; /* Adjust as needed */
-  left: 60%;
+  bottom: 30%; /* Adjust as needed */
+  right: 0;
   transform: translateX(-50%);
   padding: 10px;
   z-index: 5;
@@ -598,6 +598,33 @@ input {
   align-items: center;
   gap: 20px;
 }
+
+.titre {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.roomplus {
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.rolem {
+  color: #9a9a9a;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.aa {
+  margin-right: 220px;
+}
+
 /* InboxMsg.css */
 .scroll-container {
   max-height: 480px;
@@ -718,3 +745,4 @@ main{
   height: 100vh;
 
 }
+
