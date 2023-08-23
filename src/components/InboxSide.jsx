@@ -6,7 +6,7 @@ import InboxOld from "./InboxOld";
 const InboxSide = () => {
   return (
     <div>
-      <div style={{ position: "sticky", top: 0, zIndex: 1, }}>
+      <div style={{ position: "sticky", top: 0, zIndex: 1, width:300}}>
         <Inboxsearch />
       </div>
       <div style={{  height: "calc(100vh - 60px)" }}>
