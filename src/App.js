@@ -9,6 +9,8 @@ import Drive from "./pages/Drive";
 import Inbox from "./pages/Inbox";
 import Rooms from "./pages/Rooms";
 import BigProfile from "./pages/BigProfile";
+import CreateRoom from "./pages/CreateRoom";
+import CreateMember from "./pages/CreateMember";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/Inbox" element={<Inbox />} />
         <Route path="/Rooms" element={<Rooms />} />
         <Route path="/BigProfile" element={<BigProfile />} />
+        <Route path="/addroom" element={<CreateRoom />} />
+        <Route path="/addmember" element={<CreateMember />} />
       </Routes>
     </Router>
   );

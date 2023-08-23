@@ -12,6 +12,8 @@ const Proeditor = () => {
     alignItems: "center",
     justifyContent: "center",
     height: "100vh",
+    marginBottom: "-100px",
+    marginTop: "-80px",
   };
 
   const sectionStyle = {

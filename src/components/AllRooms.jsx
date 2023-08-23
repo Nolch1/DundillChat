@@ -3,20 +3,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { roomData } from "./roomsData";
 import oO from "../img/oO.png";
-import Roomsinbox from "./Roomsinbox"; // Import the Roomsinbox component
+import Roomsinbox from "./Roomsinbox";
 import RoomsSort from "./RoomsSort";
 import plus from "../img/plus.png";
+import { Link } from "react-router-dom";
 
 const AllRooms = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [showRoomsinbox, setShowRoomsinbox] = useState(false); // New state for conditional rendering
+  const [showRoomsinbox, setShowRoomsinbox] = useState(false);
   const roomsPerPage = 6;
   const roomsPerLine = 3;
   const indexOfLastRoom = currentPage * roomsPerPage;
   const rooms = roomData;
   const indexOfFirstRoom = indexOfLastRoom - roomsPerPage;
-
   const currentRooms = rooms.slice(indexOfFirstRoom, indexOfLastRoom);
+  const isLastPage = currentPage === Math.ceil(rooms.length / roomsPerPage); // Determine if it's the last page
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -28,7 +29,7 @@ const AllRooms = () => {
 
   return (
     <div className="container">
-      <div className="row " style={{}}>
+      <div className="row">
         {showRoomsinbox ? (
           <Roomsinbox />
         ) : (
@@ -104,26 +105,29 @@ const AllRooms = () => {
                 </div>
               </div>
             ))}
-            {!showRoomsinbox && (
+
+            {/* Render "Add a room" section only on the last page */}
+            {!showRoomsinbox && isLastPage && (
               <div className={`col-lg-${12 / roomsPerLine} col-md-4`}>
                 <div className="profile d-flex flex-column align-items-center m-1">
                   <div
                     style={{ width: 200 }}
                     className="user d-flex flex-column align-items-center"
                   >
-                    <img
-                      src={plus}
-                      style={{
-                        height: "100px",
-                        width: "100px",
-                        marginTop: "60px",
-                        marginLeft: "-80px",
-                      }}
-                      alt="Add Room"
-                    />
+                    <Link to="/addroom">
+                      <img
+                        src={plus}
+                        style={{
+                          height: "100px",
+                          width: "100px",
+                          marginTop: "40px",
+                          marginLeft: "-100px",
+                        }}
+                        alt="Add Room"
+                      />
+                    </Link>
                     <span
                       className="user text-black clickable-span"
-                      onClick={handleShowRoomsinbox}
                       style={{
                         color: "black",
                         fontFamily: "Montserrat",
@@ -133,7 +137,7 @@ const AllRooms = () => {
                         lineHeight: "normal",
                         marginTop: "20px",
                         marginBottom: "10px",
-                        cursor: "pointer",
+                        marginLeft: "-100px",
                       }}
                     >
                       Add a room
@@ -145,7 +149,7 @@ const AllRooms = () => {
           </React.Fragment>
         )}
       </div>
-      {/* Pagination */}
+
       {!showRoomsinbox && (
         <div className="fixed-pagination">
           <div className="d-flex justify-content-center mt-3">
