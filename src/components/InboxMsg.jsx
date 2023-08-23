@@ -21,6 +21,8 @@ const InboxMsg = () => {
         <div className="scroll-content" ref={scrollContainerRef}>
           <UserMsg />
           <UserMsg />
+          <UserMsg />
+          <UserMsg />
         </div>
       </div>
 
